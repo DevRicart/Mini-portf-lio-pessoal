@@ -1,0 +1,216 @@
+/* =================== RESET =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* =================== BODY =================== */
+
+body {
+  background-image: url(./src/Images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+
+  padding: 30px;
+
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(17, 25, 40, 0.44);
+  backdrop-filter: blur(4px) saturate(100%);
+
+  width: 370px;
+
+  border: 2px solid orange;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.card .my-information img {
+  width: 120px;
+
+  border-radius: 100px;
+  border: 4px solid yellowgreen;
+}
+
+.card .my-information .name {
+  font-size: 26px;
+}
+
+.card .my-information .role {
+  font-size: 20px;
+  color: #b8bbc5;
+}
+
+.my-information {
+  padding-top: 20px;
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .content {
+  margin-top: 15px;
+}
+
+.card .tabs {
+  display: flex;
+}
+
+.card .tabs .tab {
+  padding: 10px 0;
+
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: background 400ms;
+}
+
+.tabs img {
+  width: 40px;
+}
+
+.card .tabs .tab.selected {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card .information-tabs {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.information-tabs .information {
+  min-height: 260px;
+  padding: 15px;
+  display: none;
+}
+
+.information-tabs .information.selected {
+  display: block;
+}
+
+.card .tabs .tab:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.information-tabs .subtitle {
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.information-tabs .about {
+  font-size: 20px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.information-tabs .about span {
+  color: orangered;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 25px;
+
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.social-links li a {
+  background-color: #545454;
+
+  display: block;
+
+  width: 250px;
+
+  font-size: 20px;
+  color: #f3f3f3;
+  text-align: center;
+
+  padding: 10px;
+
+  transition: opacity 400ms;
+}
+
+.social-links li a:hover {
+  opacity: 0.7;
+}
+
+.social-links .linkedin {
+  background-color: #1d87bd;
+}
+
+.social-links .github {
+  background-color: #c13b06;
+}
+
+.social-links .instagram {
+  background-color: #c10664;
+}
+
+.social-links .whatsapp {
+  background-color: #06c185;
+}
+
+.project p {
+  font-size: 20px;
+  color: white;
+}
+
+.project img {
+  height: 75px;
+  width: 142px;
+}
+
+.col-a {
+  grid-area: A;
+}
+
+.col-b {
+  grid-area: B;
+}
+
+.information-tabs .projects {
+  max-height: 227px;
+  overflow-y: auto;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+.information-tabs .projects div {
+  margin: 10px;
+}
